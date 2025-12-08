@@ -12,12 +12,18 @@ const homeArticle=document.getElementById('home-article-nav');
 const userProfileNav=document.getElementById('user-profile-nav');
 userProfileNav.addEventListener('click',function(){
   document.getElementById('user-profile-article').classList.remove('hidden');
+  userProfileNav.classList.add('active-nav-link');
+  postArticle.classList.remove('active-nav-link');
+  homeArticle.classList.remove('active-nav-link');
   document.getElementById('display-posts').classList.add('hidden');
   document.getElementById('post-article-form').classList.add('hidden');
 })
 postArticle.addEventListener('click',function(){
     const hidePostForm=document.getElementById('post-article-form');
     hidePostForm.classList.add('hidden');
+    postArticle.classList.add('active-nav-link');
+    userProfileNav.classList.remove('active-nav-link');
+    homeArticle.classList.remove('active-nav-link');
     document.getElementById('user-profile-article').classList.add('hidden')
     document.getElementById('display-posts').classList.remove('hidden');
 });
@@ -25,6 +31,9 @@ homeArticle.addEventListener('click',function(){
     document.getElementById('post-article-form').classList.remove('hidden');
     document.getElementById('user-profile-article').classList.add('hidden');
     document.getElementById('display-posts').classList.add('hidden');
+    homeArticle.classList.add('active-nav-link');
+    postArticle.classList.remove('active-nav-link');
+    userProfileNav.classList.remove('active-nav-link');
 });
 // headerProfile nav
 const headerProfileNav=document.getElementById('header-profile-nav');

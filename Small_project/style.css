@@ -1,4 +1,4 @@
-*{
-  padding: 0px;
-  margin: 0px;
+.active-nav-link{
+  background-color: #E5E7EB;
+  color: black;
 }
