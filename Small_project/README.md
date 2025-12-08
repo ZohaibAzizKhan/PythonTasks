@@ -15,3 +15,4 @@ This project includes features like creating posts, viewing posts, deleting post
 * this project also include profile page which allow user to see its profile in future user will be able to edit it personal information
 ![Logo](https://github.com/ZohaibAzizKhan/PythonTasks/blob/main/Small_project/assets/Screenshot%20from%202025-12-08%2014-51-56.png)
 ![Logo](https://github.com/ZohaibAzizKhan/PythonTasks/blob/main/Small_project/assets/Screenshot%20from%202025-12-08%2014-52-11.png)
+![Logo](https://github.com/ZohaibAzizKhan/PythonTasks/blob/main/Small_project/assets/Screenshot%20from%202025-12-08%2014-52-21.png)
