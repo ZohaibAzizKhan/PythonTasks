@@ -33,22 +33,37 @@
       <ul class="space-y-2 text-gray-700">
         <li class="p-2 hover:bg-gray-200 rounded text-white hover:text-black cursor-pointer" id="home-article-nav">Home</li>
         <li class="p-2 text-white hover:text-black hover:bg-gray-200 rounded cursor-pointer" id="post-article-nav">Posts</li>
-        <li class="p-2 hover:bg-gray-200 text-white hover:text-black rounded cursor-pointer">Profile</li>
+        <li class="p-2 hover:bg-gray-200 text-white hover:text-black rounded cursor-pointer" id="user-profile-nav">Profile</li>
       </ul>
     </aside>
 
     <!-- Main Content -->
     <section class="flex-1 bg-gray-100 shadow rounded p-6 h-full overflow-auto">
       <article class="bg-white p-6 rounded shadow-md" id="post-article-form">
-        <h2 class="text-2xl font-bold mb-2">Share an Update</h2>
+        <h2 class="text-2xl font-bold mb-2">Share your thoughts</h2>
       <h3 class="text-black font-bold mb-4">Heading</h3>
       <input type="text" name="heading-input" id="heading-input" placeholder="Enter heading here" class="w-full p-2 border border-gray-300 bg-gray-200 focus:ring-2 focus:ring-blue-500 rounded mb-4 outline-none">
      
 <label for="message" class="block mb-2.5 text-sm font-medium text-heading">Your message</label>
 <textarea id="message" rows="4" class="bg-neutral-secondary-medium bg-gray-200 text-sm rounded-base focus:ring-brand focus:border-brand block w-full p-3.5 shadow-xs placeholder:text-body outline-none focus:ring-2 focus:ring-blue-500 rounded" placeholder="Write your thoughts here..."></textarea>
-<button type="button" id="post-button" class="text-white bg-blue-500 hover:bg-blue-600 rounded px-4 py-2 hover:shadow-lg transition-shadow mt-5">Default</button>
-      </article>
+<label for="hashTags" class="block mb-2.5 text-sm mt-2.5 font-medium text-heading">Hash Tags</label>
+<input type="text" id="hashTags" class="w-full p-2 border border-gray-300 bg-gray-200 focus:ring-2 focus:ring-blue-500 rounded mb-4 outline-none" placeholder="Enter hash tags here...">
+<button type="button" id="post-button" class="text-white bg-blue-500 hover:bg-blue-600 rounded px-4 py-2 hover:shadow-lg transition-shadow mt-5">
+  Post
+ </button>
+</article>
       <article class="bg-white p-2 rounded shadow-md mt-6 grid grid-cols-2 gap-2 hidden" id="display-posts">
+      </article>
+<!-- for displaying user profile -->
+      <article class="bg-white p-6 rounded shadow-md hidden" id="user-profile-article">
+        <h2 class="text-2xl font-bold mb-4">User Profile</h2>
+        <div class="flex items-center mb-4">
+          <img src="assets/1739264042281.jpg" alt="Profile Picture" class="w-24 h-24 rounded-full mr-4">
+          <div>
+            <h3 class="text-xl font-semibold" id="profile-username">Username</h3>
+            <p class="text-gray-600" id="profile-email">Email</p>
+          </div>
+        </div>
       </article>
     </section>
 
