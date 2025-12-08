@@ -26,6 +26,13 @@ homeArticle.addEventListener('click',function(){
     document.getElementById('user-profile-article').classList.add('hidden');
     document.getElementById('display-posts').classList.add('hidden');
 });
+// headerProfile nav
+const headerProfileNav=document.getElementById('header-profile-nav');
+headerProfileNav.addEventListener('click',function(){
+  document.getElementById('user-profile-article').classList.remove('hidden');
+  document.getElementById('display-posts').classList.add('hidden');
+  document.getElementById('post-article-form').classList.add('hidden');
+})
 console.log(headingInput.value)
 
 // exatract heading and message on button click
@@ -86,6 +93,7 @@ hover:text-blue-500 cursor-pointer" id="dislike-icon" aria-hidden="true" xmlns="
         document.getElementById('display-posts').appendChild(postElement);
 
 });
+// for displaying posts
 const postsContainer = document.getElementById('display-posts');
 
 postsContainer.addEventListener('click', function(e) {
