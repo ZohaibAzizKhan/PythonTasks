@@ -12,4 +12,5 @@ This project includes features like creating posts, viewing posts, deleting post
 * Each post include a delete icon
 * which allow user to delete a post if something bad happend
 ### Profile
-* this project also include profile page if which allow user to see its profile in future user will be able to edit it personal information
+* this project also include profile page which allow user to see its profile in future user will be able to edit it personal information
+![Logo](https://github.com/ZohaibAzizKhan/PythonTasks/blob/main/Small_project/assets/Screenshot%20from%202025-12-08%2014-51-56.png)
