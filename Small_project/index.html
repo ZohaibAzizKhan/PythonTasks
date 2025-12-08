@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Social Clone UI</title>
+</head>
+<body class="bg-gray-100 flex flex-col h-screen">
+  <!-- Header -->
+  <header class="flex justify-between items-center bg-blue-200 shadow-md p-4 relative">
+    <img src="assets/logo.jpeg" class="rounded-full w-12 h-12" alt="">
+    <h1 class="text-xl text-blue-600 font-bold">Mini FaceBook</h1>
+    <img class="rounded-full w-12 h-12 cursor-pointer" id="profile-image" src="assets/1739264042281.jpg" alt="image description">
+    <div id="dropdownDelay" class="z-10 absolute right-2 top-20 border border-default-medium hidden rounded shadow-sm w-44">
+    <ul class="p-2 text-sm text-body font-medium" aria-labelledby="dropdownDelayButton">
+      <li>
+        <a href="#" class="inline-flex items-center hover:bg-green-200 w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Profile</a>
+      </li>
+      <li>
+        <a href="#" class="inline-flex items-center hover:bg-green-200 w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Sign out</a>
+      </li>
+    </ul>
+</div>
+  </header>
+
+  <!-- Main UI -->
+  <main class="flex mt-2 flex-1 max-w-full gap-4 overflow-hidden">
+
+    <!-- Left Sidebar -->
+    <aside class="w-1/6 bg-gray-600 shadow rounded p-4 flex flex-col h-full overflow-auto">
+      <h2 class="text-lg font-semibold mb-3">Left Sidebar</h2>
+      <ul class="space-y-2 text-gray-700">
+        <li class="p-2 hover:bg-gray-200 rounded text-white hover:text-black cursor-pointer" id="home-article-nav">Home</li>
+        <li class="p-2 text-white hover:text-black hover:bg-gray-200 rounded cursor-pointer" id="post-article-nav">Posts</li>
+        <li class="p-2 hover:bg-gray-200 text-white hover:text-black rounded cursor-pointer">Profile</li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <section class="flex-1 bg-gray-100 shadow rounded p-6 h-full overflow-auto">
+      <article class="bg-white p-6 rounded shadow-md" id="post-article-form">
+        <h2 class="text-2xl font-bold mb-2">Share an Update</h2>
+      <h3 class="text-black font-bold mb-4">Heading</h3>
+      <input type="text" name="heading-input" id="heading-input" placeholder="Enter heading here" class="w-full p-2 border border-gray-300 bg-gray-200 focus:ring-2 focus:ring-blue-500 rounded mb-4 outline-none">
+     
+<label for="message" class="block mb-2.5 text-sm font-medium text-heading">Your message</label>
+<textarea id="message" rows="4" class="bg-neutral-secondary-medium bg-gray-200 text-sm rounded-base focus:ring-brand focus:border-brand block w-full p-3.5 shadow-xs placeholder:text-body outline-none focus:ring-2 focus:ring-blue-500 rounded" placeholder="Write your thoughts here..."></textarea>
+<button type="button" id="post-button" class="text-white bg-blue-500 hover:bg-blue-600 rounded px-4 py-2 hover:shadow-lg transition-shadow mt-5">Default</button>
+      </article>
+      <article class="bg-white p-2 rounded shadow-md mt-6 grid grid-cols-2 gap-2 hidden" id="display-posts">
+      </article>
+    </section>
+
+  </main>
+  <script src="index.js" defer></script>
+</body>
+</html>
