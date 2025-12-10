@@ -1,0 +1,2 @@
+Hello this is an example of file handling with exception 
+ this is the second line of this
